@@ -106,7 +106,14 @@ Open intellij and make click in update imports.
 5. Find the root where jdk is located, Example: C:\Program Files\Java\jdk1.8.0_161
 6. Click on OK button
 
+## Download gecko drivers
 
+The gecko driver version is v0.19.1
+* [Drivers](https://github.com/mozilla/geckodriver/releases)
+
+## Download selenium drivers
+
+* [Drives](https://chromedriver.storage.googleapis.com/index.html?path=2.35/)
 
 
 

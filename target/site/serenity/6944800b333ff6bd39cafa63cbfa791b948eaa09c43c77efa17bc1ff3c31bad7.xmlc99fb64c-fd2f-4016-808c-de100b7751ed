@@ -1,0 +1,74 @@
+<acceptance-test-run title="Fill the user details form" name="Fill the user details form" description="" steps="6" successful="0" failures="0" errors="2" skipped="4" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="11601" timestamp="2018-03-04T12:43:33.848-06:00">
+  <user-story id="fill-the-form" name="Fill the form" path="src/test/resources/features/form/personal-form.feature"/>
+  <issues>
+    <issue>PS-102</issue>
+    <issue>PS-102</issue>
+    <issue>PS-102</issue>
+  </issues>
+  <versions>
+    <version>Release-2</version>
+  </versions>
+  <tags>
+    <tag name="ui" type="component"/>
+    <tag name="Fill the form" type="feature"/>
+    <tag name="PS-102" type="issue"/>
+    <tag name="Release-2" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>firstname</header>
+      <header>lastname</header>
+      <header>email</header>
+      <header>place</header>
+    </headers>
+    <rows>
+      <row result="ERROR">
+        <value>kk</value>
+        <value>pp</value>
+        <value>kp@gmai.com</value>
+        <value>Ontario</value>
+      </row>
+      <row result="ERROR">
+        <value>ss</value>
+        <value>zz</value>
+        <value>sr@gmai.com</value>
+        <value>Ontario</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {firstname=kk, lastname=pp, email=kp@gmai.com, place=Ontario}" result="ERROR">
+    <test-group name="Given I am logged in as an user" result="ERROR">
+      <test-step result="ERROR" duration="458">
+        <description>Opens home page</description>
+        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error>
+        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#xd;
+[com.kp.testproject.cucumber.steps.serenity.UserSteps.opens_home_page(UserSteps.java:20), com.kp.testproject.cucumber.steps.PersonalFormScenarioSteps.givenIWantToSeeArticlesFromAParticularShop(PersonalFormScenarioSteps.java:34)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="2">
+      <description>When I fill the form with the details as &apos;kk&apos; and &apos;pp&apos; and &apos;kp@gmai.com&apos; and &apos;Ontario&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then I should find submit button enabled</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {firstname=ss, lastname=zz, email=sr@gmai.com, place=Ontario}" result="ERROR">
+    <test-group name="Given I am logged in as an user" result="ERROR">
+      <test-step result="ERROR" duration="55">
+        <description>Opens home page</description>
+        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error>
+        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#xd;
+[com.kp.testproject.cucumber.steps.serenity.UserSteps.opens_home_page(UserSteps.java:20), com.kp.testproject.cucumber.steps.PersonalFormScenarioSteps.givenIWantToSeeArticlesFromAParticularShop(PersonalFormScenarioSteps.java:34)]</exception>
+      </test-step>
+    </test-group>
+    <test-step result="SKIPPED" duration="1">
+      <description>When I fill the form with the details as &apos;ss&apos; and &apos;zz&apos; and &apos;sr@gmai.com&apos; and &apos;Ontario&apos;</description>
+    </test-step>
+    <test-step result="SKIPPED" duration="0">
+      <description>Then I should find submit button enabled</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

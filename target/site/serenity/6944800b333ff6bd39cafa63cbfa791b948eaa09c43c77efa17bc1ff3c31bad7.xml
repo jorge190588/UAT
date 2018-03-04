@@ -1,7 +1,6 @@
-<acceptance-test-run title="Fill the user details form" name="Fill the user details form" description="" steps="6" successful="0" failures="0" errors="2" skipped="4" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="3729" timestamp="2018-03-02T16:38:43.589-06:00">
+<acceptance-test-run title="Fill the user details form" name="Fill the user details form" description="" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="16043" timestamp="2018-03-04T13:30:45.839-06:00" session-id="79cf50067ee6fd6c3a851f7b33ad4718">
   <user-story id="fill-the-form" name="Fill the form" path="src/test/resources/features/form/personal-form.feature"/>
   <issues>
-    <issue>PS-102</issue>
     <issue>PS-102</issue>
     <issue>PS-102</issue>
   </issues>
@@ -25,50 +24,50 @@
       <header>place</header>
     </headers>
     <rows>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>kk</value>
         <value>pp</value>
         <value>kp@gmai.com</value>
         <value>Ontario</value>
       </row>
-      <row result="ERROR">
-        <value>ss</value>
-        <value>zz</value>
-        <value>sr@gmai.com</value>
-        <value>Ontario</value>
-      </row>
     </rows>
   </examples>
-  <test-group name="[1] {firstname=kk, lastname=pp, email=kp@gmai.com, place=Ontario}" result="ERROR">
-    <test-group name="Given I am logged in as an user" result="ERROR">
-      <test-step result="ERROR" duration="210">
+  <test-group name="[1] {firstname=kk, lastname=pp, email=kp@gmai.com, place=Ontario}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="b33820295512a76215726fa1f2d078ff.png"/>
+    </screenshots>
+    <test-group name="Given I am logged in as an user" result="SUCCESS">
+      <screenshots>
+        <screenshot image="c623b90f9d0c5a36a54e744a44272770.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="12032">
+        <screenshots>
+          <screenshot image="c623b90f9d0c5a36a54e744a44272770.png"/>
+        </screenshots>
         <description>Opens home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#xd;
-[com.kp.testproject.cucumber.steps.serenity.UserSteps.opens_home_page(UserSteps.java:20), com.kp.testproject.cucumber.steps.PersonalFormScenarioSteps.givenIWantToSeeArticlesFromAParticularShop(PersonalFormScenarioSteps.java:34)]</exception>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="3">
-      <description>When I fill the form with the details as &apos;kk&apos; and &apos;pp&apos; and &apos;kp@gmai.com&apos; and &apos;Ontario&apos;</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="1">
-      <description>Then I should find submit button enabled</description>
-    </test-step>
-  </test-group>
-  <test-group name="[1] {firstname=ss, lastname=zz, email=sr@gmai.com, place=Ontario}" result="ERROR">
-    <test-group name="Given I am logged in as an user" result="ERROR">
-      <test-step result="ERROR" duration="43">
-        <description>Opens home page</description>
-        <error>net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error>
-        <exception>net.thucydides.core.webdriver.UnsupportedDriverException:Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#xd;
-[com.kp.testproject.cucumber.steps.serenity.UserSteps.opens_home_page(UserSteps.java:20), com.kp.testproject.cucumber.steps.PersonalFormScenarioSteps.givenIWantToSeeArticlesFromAParticularShop(PersonalFormScenarioSteps.java:34)]</exception>
+    <test-group name="When I fill the form with the details as &apos;kk&apos; and &apos;pp&apos; and &apos;kp@gmai.com&apos; and &apos;Ontario&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="b33820295512a76215726fa1f2d078ff.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1386">
+        <screenshots>
+          <screenshot image="b33820295512a76215726fa1f2d078ff.png"/>
+        </screenshots>
+        <description>Searches for shop called: kk, pp, kp@gmai.com, Ontario</description>
       </test-step>
     </test-group>
-    <test-step result="SKIPPED" duration="1">
-      <description>When I fill the form with the details as &apos;ss&apos; and &apos;zz&apos; and &apos;sr@gmai.com&apos; and &apos;Ontario&apos;</description>
-    </test-step>
-    <test-step result="SKIPPED" duration="1">
-      <description>Then I should find submit button enabled</description>
-    </test-step>
+    <test-group name="Then I should find submit button enabled" result="SUCCESS">
+      <screenshots>
+        <screenshot image="b33820295512a76215726fa1f2d078ff.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="343">
+        <screenshots>
+          <screenshot image="ca369707ee4638e99f164f19f00dc90d.png"/>
+        </screenshots>
+        <description>Should see submit button enabled</description>
+      </test-step>
+    </test-group>
   </test-group>
 </acceptance-test-run>

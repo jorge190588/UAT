@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Fill the form" skipped="0" tests="2" time="3.73" timestamp="2018-03-61 04:38:43"><testcase name="Fill the user details form"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
+com.kp.testproject.cucumber.steps.serenity.UserSteps.opens_home_page(UserSteps.java:20)&#13;
+com.kp.testproject.cucumber.steps.PersonalFormScenarioSteps.givenIWantToSeeArticlesFromAParticularShop(PersonalFormScenarioSteps.java:34)&#13;
+</system-err></testcase></testsuite>
